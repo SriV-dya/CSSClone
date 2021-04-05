@@ -1,182 +1,178 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
-
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     font-family: 'Open Sans', sans-serif;
 }
-
-:root {
-    --color-1: rgba(29, 161, 242, 1.00);
-    --color-1-disable: rgba(29, 160, 242, 0.63);
-    --color-1-hover: rgb(20, 150, 231);
-    --color-2: rgb(136, 153, 166);
-    --bg-color: rgba(29, 161, 242, 0.1);
-    --border-color: rgb(56, 68, 77);
+body{
+    background-color: #e5e5e5;
 }
 
-main {
-    display: grid;
-    grid-template-columns: 1fr 1.1fr 1.2fr;
-    grid-template-areas:
-        "left middle right";
-    background-color: #f4f4f4;
+/* css for navbar  */
+.igname{
+        display: inline-flex;
+        max-height: 150px;
+        max-width: 150px;
+        object-fit: contain;
+        position: relative;
+        left: 20px;
+        top: 20px;
+}
+.navbg {
+    -ms-flex-order: 0;
+    order: 0;
+    background-color: #fafafa;
+    background-color: rgba(var(--b3f,250,250,250),1);
+    padding: 0;
+    position: sticky;
+    max-height: 95px;
+    border: 1px solid #dbdbdb;
+}
+.ipborder {
+    border: solid 1px #dbdbdb;
+    border: solid 1px rgba(var(--b6a,219,219,219),1);
+    border-radius: 3px;
+    color: #262626;
+    color: rgba(var(--i1d,38,38,38),1);
+    outline: 0;
+    padding: 3px 10px 3px 26px;
+    z-index: 2;
+}
+.ipfiller{
+    display: inline;
+    font-size: 14px;
+    background: #fafafa;
+    background: rgba(var(--b3f,250,250,250),1);
+    position: relative;
+    left: 40%;
+    bottom: 50px
+}
+input {
+    text-rendering: auto;
     color: black;
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: start;
+    appearance: textfield;
+    background-color: rgb(255, 255, 255);
+    cursor: text;
+    margin: 0em;
+    font: 400 13.3333px Arial;
+    padding: 1px 2px;
+    border-width: 2px;
+    border-style: inset;
+    border-color: rgb(118, 118, 118);
+    border-image: initial;
 }
-
-.left__pane {
-    grid-area: left;
-    height: 100vh;
-    position: fixed;
-    left: 300px;
+.smalldp{
+    vertical-align: middle;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  border: 2px solid black;
+  position: relative;
+  left: 96%;
 }
-
-.center__pane {
-    border-left: 0.9px solid var(--border-color);
-    border-right: 0.9px solid var(--border-color);
-    grid-area: middle;
-    min-height: 100vh;
+.home{
+    position: relative;
+    left: 80%;
 }
-
-.right__pane {
-    grid-area: right;
-    height: 100vh;
-    position: fixed;
-    right: 310px;
+.message{
+    position: relative;
+    left:84%;
 }
-
-.link__txt {
-    font-size: 1rem;
-    color: var(--color-1);
-    cursor: pointer;
-}.search {
+.find{
+    position: relative;
+    left:88%;
+}
+.feed{
+    position: relative;
+    left:92%;
+}
+.basicicons{
+    width: 15%;
     display: flex;
-    width: 320px;
-    height: 48px;
-    background-color: rgb(37, 51, 65);
-    margin: 0.4rem 1rem;
-    border-radius: 30px;
-    padding: 12px;
+    justify-content: space-around;
+    color: #696e79;
+    position: relative;
+    right:-70%;
+    bottom: 70px;
 }
 
-.search>svg {
-    margin-left: 8px;
-    width: 20px;
-    height: 20px;
-    fill: var(--color-2);
-}
+/* css for avatar bar  */
+.avatar1{
+    vertical-align: middle;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: 2px solid #d3149a;}
 
-.search>input {
-    margin-left: 1rem;
-    display: block;
-    background-color: inherit;
-    border: none;
-    color: white;
-    font-size: 0.95rem;
-}
+  .avatar2{
+    vertical-align: middle;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: 2px solid #d3149a;}
 
-.search>input::placeholder {
-    color: var(--color-2);
-}
+  .avatar3{
+    vertical-align: middle;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: 2px solid #d3149a;}
 
-.search>input:focus {
-    outline: none;
-}
+  .avatar4{
+    vertical-align: middle;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: 2px solid #d3149a;}
 
+  .avatar5{
+    vertical-align: middle;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: 2px solid #d3149a;}
 
+  .avatar6{
+    vertical-align: middle;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: 2px solid #d3149a;}
 
-.suggestion__box {
-    width: 320px;
-    margin: 1rem;
-    border-radius: 20px;
-    background-color: rgb(25, 39, 52);
+  .avatar7{
+    vertical-align: middle;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: 2px solid #d3149a;}
 
-}
+.borderbox{
+    border: 1px solid #c8c8c8;
+    margin: 2rem;
+    padding: 1rem;
+    background-color: #fafafa;
+    max-width: 52%;
+    border-radius: 0.3rem;
+    position: relative;
+    left: 15%;
+    align-items: stretch;
+    }
 
-.box__title {
-    padding: 0.6rem;
-    padding-left: 1rem;
-    font-size: 1.2rem;
-    font-weight: bold;
-    border-bottom: 1px solid var(--border-color);
-}
-
-.suggestion {
+  .grpofavatar{
     display: flex;
-    justify-content: space-between;
-    border-bottom: 1px solid var(--border-color);
-    /* padding: 0.5rem; */
-}
-
-.container__suggest {
-    margin-left: 1rem;
-    margin-top: 0.6rem;
-}
-
-.suggest__img {
-    padding: 0.2rem;
-    margin: 0.3rem;
-    width: 65px;
-    border-radius: 10px;
-}
-
-.suggest__img>img {
-    display: block;
-    width: 100%;
-    height: 55px;
-    border-radius: 10px;
-}
-
-.show__more {
-    padding-top: 0.5rem;
-    padding-left: 1rem;
-    padding-bottom: 0.8rem;
-}
-
-.profiles {
-    display: block;
-}
-
-.profile__container {
-    padding: 1rem 0;
-    display: flex;
-    border-bottom: 1px solid var(--border-color);
-}
-
-.suggest__profile {
-    margin-left: 0.8rem;
-    margin-right: 0.3rem;
-}
-
-.no__border {
-    border: none;
-}
-
-.names {
-    margin-left: 0.3rem;
-    height: 30px;
-}
-
-.follow__btn__container {
-    margin-left: auto;
-    padding-top: 0.7rem;
-    padding-right: 1rem;
-}
-
-.btn__follow {
-    display: block;
-    background-color: rgb(25, 39, 52);
-    font-size: 1rem;
-    font-weight: bold;
-    border: 1px solid var(--color-1);
-    color: var(--color-1);
-    width: 78px;
-    height: 30px;
-    border-radius: 20px;
-    cursor: pointer;
-}
-
-.btn__follow:focus {
-    outline: none;
-}
+    justify-content: space-around;
+    color: #696e79;
+    position: relative;
+    /* left: 1%; */
+  }
+  .grpofavatar:hover{
+      cursor: pointer;
+  }

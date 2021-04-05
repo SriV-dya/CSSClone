@@ -6,104 +6,139 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
 </head>
 <body>
-    <section class="right__pane">
-        <div class="search">
-            <svg viewBox="0 0 24 24"
-                class="r-111h2gw r-4qtqp9 r-yyyyoo r-1xvli5t r-dnmrzs r-4wgw6l r-f727ji r-bnwqim r-1plcrui r-lrvibr">
-                <g>
-                    <path
-                        d="M21.53 20.47l-3.66-3.66C19.195 15.24 20 13.214 20 11c0-4.97-4.03-9-9-9s-9 4.03-9 9 4.03 9 9 9c2.215 0 4.24-.804 5.808-2.13l3.66 3.66c.147.146.34.22.53.22s.385-.073.53-.22c.295-.293.295-.767.002-1.06zM3.5 11c0-4.135 3.365-7.5 7.5-7.5s7.5 3.365 7.5 7.5-3.365 7.5-7.5 7.5-7.5-3.365-7.5-7.5z">
-                    </path>
-                </g>
-            </svg>
-
-            <!-- <input type="text" placeholder="Search Twitter"> -->
-        </div>
-
-        <div class="suggestion__box">
-            <div class="box__title">
-                What's happening
-            </div>
-            <div class="suggestion">
-                <div class="container__suggest">
-                    <div class="sub__txt">COVID-19</div>
-                    <div class="main__txt">COVID-19 in India</div>
-                </div>
-                <div class="suggest__img">
-                    <img
-                        src="https://pbs.twimg.com/semantic_core_img/1255575536824233984/CiLy4der?format=jpg&name=240x240">
-                </div>
-            </div>
-
-            <div class="show__more">
-                <span class="link__txt">Show more</span>
-            </div>
-        </div>
-
-        <div class="suggestion__box">
-            <div class="box__title">
-                Suggestions For You
-            </div>
-            <div class="suggestion profiles">
-                <div class="profile__container">
-                    <div class="suggest__profile">
-                        <img src="https://pbs.twimg.com/profile_images/1276770212927410176/qTgTIejk_400x400.jpg"
-                            class="avatar av__big">
+    <!-- NAVBAR -->
+    <nav class="navbg">
+        <div class="">
+        <div class="">
+            <div class="">
+                <div class="">
+                    <div class="">
+                        <a class="" href="/" tabindex="0">
+                            <div class="">
+                                <div class="">
+                                    <img alt="Instagram" class="igname" src="https://1000logos.net/wp-content/uploads/2017/02/Instagram-Logo.png">
+                                </div>
+                            </div>
+                        </a>
                     </div>
-
-                    <div class="names">
-                        <div class="main__txt">freeCodeCamp.org</div>
-                        <div class="sub__txt">@freecodecamp</div>
-                    </div>
-
-                    <div class="follow__btn__container">
-                        <button class="btn__follow">Follow</button>
-                    </div>
-                </div>
-
-                <div class="profile__container">
-                    <div class="suggest__profile">
-                        <img src="https://pbs.twimg.com/profile_images/1301471391569584129/IrmlElQo_400x400.jpg"
-                            class="avatar av__big">
-                    </div>
-
-                    <div class="names">
-                        <div class="main__txt">Amish Tripathi
+                    <div class="ipinline">
+                        <input class="ipborder ipfiller" type="text" autocapitalize="none" placeholder="Search..." value="">
+                        <div class="" role="button" tabindex="0">
+                            <div class="">
+                                <span class=""></span>
+                            </div>
                         </div>
-                        <div class="sub__txt">@authoramish</div>
                     </div>
-
-                    <div class="follow__btn__container">
-                        <button class="btn__follow">Follow</button>
+                    <div class="">
+                        <div class="basicicons">
+                            <div class="">
+                                <div class="">
+                                    <a href="/" tabindex="0">
+                                        <svg aria-label="Home" class="home" fill="#262626" height="22" viewBox="0 0 48 48" width="22">
+                                            <path d="M45.5 48H30.1c-.8 0-1.5-.7-1.5-1.5V34.2c0-2.6-2.1-4.6-4.6-4.6s-4.6 2.1-4.6 4.6v12.3c0 .8-.7 1.5-1.5 1.5H2.5c-.8 0-1.5-.7-1.5-1.5V23c0-.4.2-.8.4-1.1L22.9.4c.6-.6 1.6-.6 2.1 0l21.5 21.5c.3.3.4.7.4 1.1v23.5c.1.8-.6 1.5-1.4 1.5z"></path>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="">
+                                <a class="" href="/direct/inbox/" tabindex="0">
+                                    <svg aria-label="Messenger" class="message" fill="#262626" height="22" viewBox="0 0 48 48" width="22">
+                                        <path d="M36.2 16.7L29 22.2c-.5.4-1.2.4-1.7 0l-5.4-4c-1.6-1.2-3.9-.8-5 .9l-6.8 10.7c-.7 1 .6 2.2 1.6 1.5l7.3-5.5c.5-.4 1.2-.4 1.7 0l5.4 4c1.6 1.2 3.9.8 5-.9l6.8-10.7c.6-1.1-.7-2.2-1.7-1.5zM24 1C11 1 1 10.5 1 23.3 1 30 3.7 35.8 8.2 39.8c.4.3.6.8.6 1.3l.2 4.1c0 1 .9 1.8 1.8 1.8.2 0 .5 0 .7-.2l4.6-2c.2-.1.5-.2.7-.2.2 0 .3 0 .5.1 2.1.6 4.3.9 6.7.9 13 0 23-9.5 23-22.3S37 1 24 1zm0 41.6c-2 0-4-.3-5.9-.8-.4-.1-.8-.2-1.3-.2-.7 0-1.3.1-2 .4l-3 1.3V41c0-1.3-.6-2.5-1.6-3.4C6.2 34 4 28.9 4 23.3 4 12.3 12.6 4 24 4s20 8.3 20 19.3-8.6 19.3-20 19.3z"></path>
+                                    </svg>
+                                </a>
+                            </div>
+                            <div class="">
+                                <a href="/explore/" tabindex="0">
+                                    <svg aria-label="Find People" class="find" fill="#262626" height="22" viewBox="0 0 48 48" width="22">
+                                        <path clip-rule="evenodd" d="M24 0C10.8 0 0 10.8 0 24s10.8 24 24 24 24-10.8 24-24S37.2 0 24 0zm0 45C12.4 45 3 35.6 3 24S12.4 3 24 3s21 9.4 21 21-9.4 21-21 21zm10.2-33.2l-14.8 7c-.3.1-.6.4-.7.7l-7 14.8c-.3.6-.2 1.3.3 1.7.3.3.7.4 1.1.4.2 0 .4 0 .6-.1l14.8-7c.3-.1.6-.4.7-.7l7-14.8c.3-.6.2-1.3-.3-1.7-.4-.5-1.1-.6-1.7-.3zm-7.4 15l-5.5-5.5 10.5-5-5 10.5z" fill-rule="evenodd"></path>
+                                    </svg>
+                                </a>
+                            </div>
+                            <div class="">
+                                <a class="" href="/accounts/activity/">
+                                    <svg aria-label="Activity Feed" class="feed" fill="#262626" height="22" viewBox="0 0 48 48" width="22">
+                                        <path d="M34.6 6.1c5.7 0 10.4 5.2 10.4 11.5 0 6.8-5.9 11-11.5 16S25 41.3 24 41.9c-1.1-.7-4.7-4-9.5-8.3-5.7-5-11.5-9.2-11.5-16C3 11.3 7.7 6.1 13.4 6.1c4.2 0 6.5 2 8.1 4.3 1.9 2.6 2.2 3.9 2.5 3.9.3 0 .6-1.3 2.5-3.9 1.6-2.3 3.9-4.3 8.1-4.3m0-3c-4.5 0-7.9 1.8-10.6 5.6-2.7-3.7-6.1-5.5-10.6-5.5C6 3.1 0 9.6 0 17.6c0 7.3 5.4 12 10.6 16.5.6.5 1.3 1.1 1.9 1.7l2.3 2c4.4 3.9 6.6 5.9 7.6 6.5.5.3 1.1.5 1.6.5.6 0 1.1-.2 1.6-.5 1-.6 2.8-2.2 7.8-6.8l2-1.8c.7-.6 1.3-1.2 2-1.7C42.7 29.6 48 25 48 17.6c0-8-6-14.5-13.4-14.5z"></path>
+                                    </svg>
+                                    <div class="">       
+                                </div>
+                            </div>
+                            <div class="">
+                                <div class="">
+                            </div>
+                            <span class="icondp" role="link" tabindex="0" style="width: 22px; height: 22px;">
+                                <img alt="srividyamv's profile picture" class="smalldp" crossorigin="anonymous" data-testid="user-avatar" draggable="false" src="https://instagram.fblr8-1.fna.fbcdn.net/v/t51.2885-19/s150x150/129764993_392705015385317_4064279279725777397_n.jpg?tp=1&amp;_nc_ht=instagram.fblr8-1.fna.fbcdn.net&amp;_nc_ohc=OBf-qfSss8kAX-m7ihM&amp;ccb=7-4&amp;oh=4bf808ee6012145b14abd8588c966326&amp;oe=60809CA3&amp;_nc_sid=7b02f1"></span>
+                                <div class="" style="margin-left: -180px;">
+                                </div>
+                            </div>
+                        </a>
+                        </div>
                     </div>
                 </div>
-
-                <div class="profile__container no__border">
-                    <div class="suggest__profile">
-                        <img src="https://pbs.twimg.com/profile_images/875597226747207681/0jkhMbbB_400x400.jpg"
-                            class="avatar av__big">
-                    </div>
-
-                    <div class="names">
-                        <div class="main__txt">WION</div>
-                        <div class="sub__txt">@WIONews</div>
-                    </div>
-
-                    <div class="follow__btn__container">
-                        <button class="btn__follow">Follow</button>
-                    </div>
-                </div>
-            </div>
-            <div class="show__more">
-                <span class="link__txt">Show more</span>
             </div>
         </div>
+    </div>
+</div>
+</nav>
 
 
-    </section>
+<!-- Avatar Bar -->
+<div class="borderbox">
+    <div class="grpofavatar">
+        <div class="avatarone">
+            <img src="data:image/png;base64,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" alt="netflix" class="avatar1">
+            <small>Netflix & Kill</small>
+        </div>
+        <div class="avatartwo">
+            <img src="data:image/png;base64,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" alt="spotify" class="avatar2">
+        <small>Music Spotify</small></div>
+        <div class="avatarthree">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAQMAAADCCAMAAAB6zFdcAAAAtFBMVEX////jGDcAZJEAVYgAV4niACgAXIzhAB0AXo3hABnhAB8AYpDhACH1ucDjFTUAWouzydf0tLviAC3zqrKuxtW4zdqDqL/pYHDuh5P+9/g0eJ7vi5bypa5RiKns8/aKrcP86OvpXG3519xCf6OhvM3y9/nlLUf4ztPqZXTlOE/xnabnQ1joTmHhABL2wMXrb34db5jtfYl2nrnI2eNfkK5XjKtrmLTc5+7gAADQ3+cATYSXtcgLkeoyAAAEWUlEQVR4nO2ba3OaUBRFERFQLCQm8ZWXjdo8mjQm5tHW//+/CkHgcj08Zpop9Zy9PjQzV2YCy302eE0NAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQBqTWdNn0Ding96366ZPollGfb/ld780fRpNctNphfiOYAmjDwUhcpNwkyhotaQmYZQpkNoJqgKh43CTVyCxGL9qCgQmYbSrQFoxkgpkFSMxCNtxOGz61P4VdAriYhQioTAFEQ8iJBSnIC5GARIqFITFyF5C6SDEcJdQlQIB41AjBRGci7FWCngnoWYKIrh2QoECX5AEahD8TrczcHoDwgPHcaBS0Lk9nIUvXY07hAR+xUgpcO6SV2ffB/yTQCpQr/GekMCrE8hBGKtHTHxiHDhJoBT4g0numDNyZ4mNBPKmOBjnD5qQd84HJjtL9HNB/4d22D31oOD3Zk2c8mdzTz8a9a604x6JVgxb46yRk/5knvpwYDz1yIsTMwurg/CfMZWEwVP+yAl1kN/VTe0fU7d9Ev4YE0moc2/k8P3b1DW9Qgn5IEyIz00cvnMJFZiJBCLpzpFyLPWBgYsCsyQJzmly6OyW58eFrYJIQlExdlpns4kxuX7sUh8W2KRAkUAVY8cZtPp96smAQQrmmYIyCaEGtntpU1VBuQSuCua2aVISHDkKprqCsmLkqWAnBR/UHwe2Cup3Al8FiYTTKgmcFdQsxu5R5a/43ylREHXCsVGRBN4pyIqxRAKHFLjlCqqKUYKCSELJODBQcF4xCMo4kMXY3f/906ouSCUUJEFMCtIknOpJYJCC+groJDiMFHhuENje7nW7bmBnO0s7EhilwLNWw8Xx5byt3SHc9uvmePHsBQXjwEiBvVrHCxcvlmLAs56X8fqB51HjwEnBa7a2sBQF63R5mewwxRIcbgrcubp6meTetE6U5aW5kwROddi+yK1PtxfrvuWW123t7sAgBa/J+61dq3GyfcF6z68nbrYSft4Z+85bGvlgrb0UN4K30pY36ZPEh4T9/5//70myd0bBMFYeFQ9jHZg5CXvPOqt/a6m9No8dPGvLv5Tb5m9tTvaSi7/JQfx17P5zmUoItAtaVvVBvKHCgWESbf0NP6i4L3gWjxREpBKKng9ecstJg3AZhJjh9g33prnV9BZoqe2/NPmlICJJgn2erW2U9lcu92LlMkxBRCLBXW2v7P08ewiI3vO37Zgcux5TBZkEzzKfN4vhdHf/4PxysXlzk6lhqEApRtO1bZfYR/JsW9lH4qhAlVAJtzrMqC2BawoiakrgrCB8bK4jgbeCWkngrqCGBL51mFEhgX8KIkolyFBQWoxSFJQkQY6CwiRIqMOMbHtNaAoiiHGQpoAYB3kKwiRo4yBQgZ4EUXWYoRSjxEGIyZIgVkGaBFnPBTqxBMEpiNhYQWDrf5UgjffNQv9CHgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgD9/AOOVTNATMjLMAAAAAElFTkSuQmCC" alt="dominos" class="avatar3">
+        <small>Cheezy Pizza</small>
+    </div>
+        <div class="avatarfour">
+            <img src="data:image/png;base64,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" alt="apple" class="avatar4">
+        <small>iTv @ Apple</small>
+    </div>
+        <div class="avatarfive">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSh_flCZ3Dno9QtEw-lM_X_r9tecFVQbbwutg&usqp=CAU" alt="youtube" class="avatar5">
+        <small>YouTube Video</small>
+    </div>
+        <div class="avatarsix">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSh_flCZ3Dno9QtEw-lM_X_r9tecFVQbbwutg&usqp=CAU" alt="youtube" class="avatar6">
+        <small>YouTube Video</small>
+    </div>
+        <div class="avatarseven">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSh_flCZ3Dno9QtEw-lM_X_r9tecFVQbbwutg&usqp=CAU" alt="youtube" class="avatar7">
+        <small>YouTube Vid</small></div>
+    </div>
+</div>
+
+<!-- Side Bar  -->
+<div class="border-handle">
+    <img class="img1 img2" src="imgs/babu.jpeg" alt="">
+    <div class="feeds">
+        <span class="username">Babu Bhaiya</span>
+        <span class="userhandle">@babuRav09 .3h</span>
+        <span class="corner">
+            <i class="fas fa-ellipsis-h"></i>
+        </span>
+        <p>
+          Camp k bad paisa hi paisa hoga
+
+        </p>
+        <span class="icons">
+            <i class="far fa-comment"></i>133
+            <i class="fas fa-retweet"></i>
+            <i class="far fa-heart"></i>
+            <i class="far fa-caret-square-down"></i>
+            <i class="corner2 fas fa-upload"></i>
+        </span>
+    </div>
+</div>
+
 
 </body>
 </html>
