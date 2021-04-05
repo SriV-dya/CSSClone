@@ -176,3 +176,47 @@ input {
   .grpofavatar:hover{
       cursor: pointer;
   }
+
+
+
+  .bigbox{
+    border: 1px solid #a4a4a4;
+    max-width: 50%;
+    position: relative;
+    left: 18%;
+    z-index: 1;
+  }
+  .scribbleddp{
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: 4px solid green;
+  position: relative;
+  left: 2%;
+  top: 10px;
+  cursor: pointer;
+  }
+
+  .brandname{
+    position: relative;
+    bottom: 40px;
+    left: 15%;
+    font-family: 'Open Sans', sans-serif;
+  }
+
+ .threedot{
+   position: relative;
+   left: 650px;
+   bottom: 60px;
+   cursor: pointer;
+ }
+
+ .moreop{
+   border: none;
+   background-color: #e5e5e5;
+ }
+
+ .postscrib{
+   position: relative;
+   left: 7%;
+ }
